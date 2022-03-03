@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+}
+#Beeform {
+  font-weight: bold;
+  font-size: larger;
+  margin: 50px;
+}
+#bee {
+  width: 150px;
+  height: 150px;
+}
+h1 {
+  color: #ff9900;
+}
+th {
+  font-weight: bolder;
+  height: 65px;
+  border: 1px solid black;
+}
+#pricing,
+#accInfo {
+  width: 75%;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+td {
+  height: 50px;
+  border: 1px;
+  border: 1px solid black;
+}

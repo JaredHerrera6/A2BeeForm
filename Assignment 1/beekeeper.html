@@ -1,0 +1,88 @@
+<!--Jared Herrera-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BeeKeeper</title>
+    <link rel="stylesheet" href="beekeeper.css" />
+    <script defer type="text/javascript" src = script.js></script>
+  </head>
+  <body>
+    <h1>Welcome to BeeKeeper!</h1>
+    <img src="beeimage.png" alt="BeekerImage" id="bee" />
+    <h2><strong>Sign Up Below</strong></h2>
+    <form
+      id="Beeform"
+      value="onsubmit"
+      onsubmit= "return formValidator()"
+      method="get"
+      action="beekeeper_completed.html"
+      
+    >
+      <label for="username ">Username</label>
+      <input type="text" name="Username" id="username" required /><br />
+
+      <label for="email">Email Address</label>
+      <input type="text" name="Email Address" id="email" required /> <br />
+
+      <label for="birthday">Birthday</label>
+      <input type="date" name="date" id="birthday" required /> <br />
+
+      <label for="Password">Password </label>
+      <input type="password" name="password" id="Password" required /> <br />
+
+      <label for="VerifyPass">Verify Password</label>
+      <input type="password" name="verifypassword" id="VerifyPass" required />
+      <br />
+      
+      <label>Desired Account Type</label>
+
+      <input type="radio" id="Personal" name="AccType" checked />
+      <label for="Personal">Personal</label>
+
+      <input type="radio" id="Business" name="AccType" />
+      <label for="Business">Business</label>
+
+      <input type="radio" id="Enterprise" name="AccType" />
+      <label for="Enterprise">Enterprise</label>
+
+      <input type="radio" id="other" name="AccType" />
+      <label for="other">Other</label><br />
+
+      <button
+      type = "submit">Submit</button>
+    </form>
+
+    <table id="pricing">
+      <caption>
+        Personal accounts allow only 1 private repo, please visit <a href= https://www.amazon.com/ref=nav_logo>main site</a> our main site
+        for more information
+      </caption>
+      <tr id="Row1">
+        <th></th>
+        <th>Personal (1-3 users)</th>
+        <th>Business (4-20 users)</th>
+        <th>Enterprise (21+ users)</th>
+      </tr>
+
+      <tr id="Row2">
+        <td>1 Repo</td>
+        <td>free</td>
+        <td>$ 12 repo/month</td>
+        <td rowspan="3">Contact Sales</td>
+      </tr>
+
+      <tr id="Row3">
+        <td>2-9 Repos</td>
+        <td>$ 10 repo/month</td>
+        <td>$ 10 repo/month</td>
+      </tr>
+
+      <tr id="Row4">
+        <td>10+ Repos</td>
+        <td>$6 repo/month</td>
+        <td>$8 repo/month</td>
+      </tr>
+    </table>
+  </body>
+</html>

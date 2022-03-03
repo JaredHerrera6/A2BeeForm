@@ -1,0 +1,59 @@
+<!--JAred Herrera-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bee Completed</title>
+    <link rel="stylesheet" href="beekeeper.css" />
+    
+  </head>
+  <body>
+    
+    <h1>Welcome to BeeKeeper!</h1>
+    <img src="beeimage.png" alt="BeekerImage" id="bee" />
+
+    <h3>Hello, <span id = username1></span></h3>
+    <table id = accInfo>
+      <caption>Your Account information is in the table below</caption>
+      <tr id = headings>
+        <th>Username</td>
+        <th>Email Address</td>
+        <th>Birthday</th>
+        <th>Password</th>
+        <th>Account Type</th>
+      </tr>
+
+      <tr>
+        <td> <span id = username></span></td>
+        <td>
+          <span id = email></span></td>
+        <td>
+          <span id = date></span>
+        </td>
+        <td><span id = password>
+        </span></td>
+        <td><span id = acctype></span></td>
+      </tr>
+    </table>
+    <script >
+      let params = new URLSearchParams(window.location.search)
+      var username1 = params.get("Username");
+      document.getElementById("username1").innerHTML = username1;
+
+      var username = params.get("Username");
+      document.getElementById("username").innerHTML = username;
+
+      var email = params.get("Email Address");
+      document.getElementById("email").innerHTML = email; 
+
+      var bday = params.get("date");
+      document.getElementById("date").innerHTML = bday;
+
+      var password = params.get("password");
+      document.getElementById("password").innerHTML = password;
+
+      var Acctype = params.get("AccType");
+      documnet.getElementById("acctype").innerHTML = Acctype;  
+    </script>
+  </body>
+</html>
