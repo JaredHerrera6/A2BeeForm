@@ -17,7 +17,7 @@
       onsubmit= "return formValidator()"
       method="get"
       action="beekeeper_completed.html"
-      
+    
     >
       <label for="username ">Username</label>
       <input type="text" name="Username" id="username" required /><br />
@@ -36,7 +36,7 @@
       <br />
       
       <label>Desired Account Type</label>
-
+      <fieldset>
       <input type="radio" id="Personal" name="AccType" checked />
       <label for="Personal">Personal</label>
 
@@ -48,6 +48,7 @@
 
       <input type="radio" id="other" name="AccType" />
       <label for="other">Other</label><br />
+    </fieldset>
 
       <button
       type = "submit">Submit</button>
